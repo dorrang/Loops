@@ -80,7 +80,7 @@ export default function Drumset() {
           playPad(pad.audioObj);
 
         }, false);
-      }
+      };
     })
   }
 
