@@ -1,0 +1,199 @@
+/* _________________________Main_________________________ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Exo 2", sans-serif;
+}
+
+body {
+  background: #333333;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+h3 {
+  font-family: "Exo 2", sans-serif;
+}
+
+/* _________________________Header_________________________ */
+
+Header {
+  font-family: "Courgette", cursive;
+  font-size: 36px;
+  font-weight: 100;
+  text-align: center;
+  color: #f7fbe1;
+  margin-top: 20px;
+}
+
+/* _________________________Navbar_________________________ */
+
+.nav {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.link {
+  color: #f7fbe1;
+  text-decoration: none;
+  margin: 10px 40px;
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+/* _________________________Footer_________________________ */
+
+footer {
+  position: absolute;
+  /* top: calc(100vh - 2.5rem); */
+  /* bottom: 0; */
+  text-align: center;
+  width: 100%;
+  height: 3rem;
+  padding: 20px;
+  opacity: 0.5;
+
+}
+
+footer p {
+  /* color: #ececec; */
+  color: black;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+
+/* _________________________Drumset_________________________ */
+
+.drums {
+  margin: 30px auto;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  height: 550px;
+  width: fit-content;
+  background-blend-mode:color;  
+  background-color: rgba(253, 38, 74, 0.603);
+  background-image: url(./images/giphypurple.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%;
+  box-shadow: 1px 1px 15px 0 rgba(0, 0, 0, 0.425);
+  padding: 30px;
+  border: 3px solid rgba(90, 90, 90, 0.384);
+  border-radius: 10px;
+  }
+
+.controller{
+  background-image: url(./images/giphypurple.gif);
+  background-color: rgb(130 66 242 );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 170%;
+  color: white;
+  box-shadow: 1px 1px 15px 0 rgba(0, 0, 0, 0.425);
+  border: 3px solid rgba(90, 90, 90, 0.384);
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 3rem;
+  margin: 30px auto;
+  width: 608px;
+}
+
+.ctrlBtn{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333333;
+  
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+.ctrlBtn:hover{
+  color: rgb(250, 64, 89);
+  cursor: pointer;
+
+}
+
+.drumpad-img {
+  width: 90%;
+  height: 90%;
+}
+.drumpad {
+  justify-content: center;
+  border: 5px solid #262729;
+  border-radius: 15px;
+  width: 150px;
+  height: 150px;
+  margin: 0 15px 15px 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  box-shadow: 3px 3px 10px -5px black;  
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+   
+}
+
+.drumpad:hover{
+  background-color: rgba(255, 255, 255, 0.35);
+  filter: brightness(115%);
+  cursor: pointer;
+}
+
+.pressed {
+  background: linear-gradient(-45deg, rgba(245, 61, 86), rgb(255, 93, 115));
+  filter: saturate(150%);
+  filter: brightness(150%);
+
+	animation: gradient 1s ease infinite;
+
+}
+
+
+
+
+/* ANIMATION */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+    filter: saturate(75%);
+
+	}
+  25%{
+    filter: saturate(85%);
+
+  }
+	50% {
+		background-position: 100% 50%;
+    filter: saturate(100%);
+  
+
+	}
+	100% {
+		background-position: 0% 50%;
+    filter: saturate(85%);
+
+
+	}
+}
